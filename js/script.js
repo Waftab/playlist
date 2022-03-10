@@ -7,12 +7,19 @@ let images=["https://i1.sndcdn.com/artworks-2OSGVjxNBtdS-0-t500x500.jpg",
 let links=["https://www.youtube.com/watch?v=PWqEPKduGm8",
           "https://www.youtube.com/watch?v=qwlzrT5zq9Y",
           "https://www.youtube.com/watch?v=YykjpeuMNEk"];
-let length= ["200","200","200"];
+let length= ["3:58","3:04","4:20"];
+
+
+
+
+
 
 //Complete Day 1 goals here
 
-function displaySongInfo() {
-  songNames.forEach(function (songName) { 
+
+  function displaySongInfo(){
+  
+ songNames.forEach(function (songName) { 
     $(".songs").append("<p>" + songName + "</p>"); });
   artistNames.forEach(function (artistName) { 
     $(".artists").append("<p>" + artistName + "</p>"); });
@@ -21,10 +28,10 @@ function displaySongInfo() {
    links.forEach(function (link) { 
     $(".links").append(`<a href="${link}">Play song</a>`); });
   length.forEach(function(length){
-     $(".lengths").append("<p>" + length + "</p>"); });
+     $(".lengths").append("<p>" + length + "</p>"); }); 
   
   // Complete the Day 2 goals inside this function
-}
+  }
 
 function emptySongInfo() {
   /* this function empties the divs each time the button is 
@@ -62,3 +69,4 @@ $(".add").click(function () {
 });
 
 displaySongInfo();
+  
